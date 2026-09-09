@@ -37,6 +37,9 @@
 
         .hero {
             min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         .dark-section {
@@ -68,18 +71,34 @@
 
 
     <section class="hero">
-        <p>Engineering Physics · UBC</p>
+
+    <div class="hero-text">
 
         <h1>Leyichen Ma</h1>
 
-        <h2>
-            Engineering Physics Student at the University of British Columbia
-        </h2>
-
-        <p>
-            Engineering design · modelling · hardware · data analysis
+        <p class="hero-description">
+            UBC Engineering Physics student passionate about applying
+            engineering design, physics, mathematics, and computation
+            to analyze and solve complex technical problems.
         </p>
-    </section>
+
+        <a class="resume-button" href="#">
+            Resume
+        </a>
+
+        <div class="social-links">
+            <a href="#">Email</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <!-- Your photo will go here later -->
+    </div>
+
+</section>
 
 
     <section id="about" class="dark-section">
