@@ -20,6 +20,7 @@
         body::before {
     content: "";
     position: absolute;
+
     top: 0;
     left: 0;
 
@@ -31,10 +32,8 @@
     background-position: left top;
     background-repeat: no-repeat;
 
-    opacity: 0.72;
-
-    pointer-events: none;
     z-index: 0;
+    pointer-events: none;
 }
 
         nav {
@@ -44,6 +43,9 @@
 
             width: 100%;
             box-sizing: border-box;
+
+            position: relative;
+            z-index: 2;
         }
 
         nav ul {
@@ -73,6 +75,9 @@
             gap: 40px;
            
             padding-top: 0;
+
+           position: relative;
+           z-index: 2;
         }
 
         .hero-text {
