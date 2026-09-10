@@ -12,98 +12,28 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
     background-color: #ffffff;
-
-    /* 左边浅绿色，慢慢过渡到白色 */
-    background-image: linear-gradient(
-        to right,
-        #eef6ee 0%,
-        #f7faf7 25%,
-        #ffffff 48%,
-        #ffffff 100%
-    );
-
     color: #173c2b;
 
     position: relative;
 }
 
         body::before {
-              content: "";
-            position: absolute;
-
-    /* 从页面最顶部开始，包括导航栏 */
+    content: "";
+    position: absolute;
     top: 0;
     left: 0;
 
     width: 100%;
-    height: 780px;
+    height: 800px;
 
-    background-image:
-
-        /* 横线 1 */
-        linear-gradient(
-            to left,
-            rgba(23, 60, 43, 0.13) 0%,
-            rgba(23, 60, 43, 0.08) 55%,
-            rgba(23, 60, 43, 0.025) 82%,
-            transparent 100%
-        ),
-
-        /* 横线 2 */
-        linear-gradient(
-            to left,
-            rgba(23, 60, 43, 0.13) 0%,
-            rgba(23, 60, 43, 0.08) 55%,
-            rgba(23, 60, 43, 0.025) 82%,
-            transparent 100%
-        ),
-
-        /* 竖线 1 */
-        linear-gradient(
-            to bottom,
-            rgba(23, 60, 43, 0.13) 0%,
-            rgba(23, 60, 43, 0.08) 55%,
-            rgba(23, 60, 43, 0.025) 82%,
-            transparent 100%
-        ),
-
-        /* 竖线 2 */
-        linear-gradient(
-            to bottom,
-            rgba(23, 60, 43, 0.13) 0%,
-            rgba(23, 60, 43, 0.08) 55%,
-            rgba(23, 60, 43, 0.025) 82%,
-            transparent 89%
-        ),
-
-        /* 竖线 3 */
-        linear-gradient(
-            to bottom,
-            rgba(23, 60, 43, 0.13) 0%,
-            rgba(23, 60, 43, 0.08) 35%,
-            rgba(23, 60, 43, 0.025) 60%,
-            transparent 78%
-        );
-
-    background-size:
-        100% 1px,
-        100% 1px,
-        1px 780px,
-        1px 780px,
-        1px 780px;
-
-    background-position:
-    right 200px,
-    right 400px,
-    calc(100% - 200px) top,
-    calc(100% - 400px) top,
-    calc(100% - 600px) top;
-
+    background-image: url("hero-bg.PNG");
+    background-size: cover;
+    background-position: left top;
     background-repeat: no-repeat;
 
-    pointer-events: none;
+    opacity: 0.72;
 
-    /* 背景层 */
+    pointer-events: none;
     z-index: 0;
 }
 
