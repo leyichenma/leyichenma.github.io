@@ -27,6 +27,86 @@
     position: relative;
 }
 
+        body::before {
+    content: "";
+    position: absolute;
+
+    /* 从页面最顶部开始，包括导航栏 */
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 780px;
+
+    background-image:
+
+        /* 横线 1 */
+        linear-gradient(
+            to left,
+            rgba(23, 60, 43, 0.20) 0%,
+            rgba(23, 60, 43, 0.14) 55%,
+            rgba(23, 60, 43, 0.05) 82%,
+            transparent 100%
+        ),
+
+        /* 横线 2 */
+        linear-gradient(
+            to left,
+            rgba(23, 60, 43, 0.18) 0%,
+            rgba(23, 60, 43, 0.12) 55%,
+            rgba(23, 60, 43, 0.04) 82%,
+            transparent 100%
+        ),
+
+        /* 竖线 1 */
+        linear-gradient(
+            to bottom,
+            rgba(23, 60, 43, 0.18) 0%,
+            rgba(23, 60, 43, 0.12) 55%,
+            rgba(23, 60, 43, 0.04) 82%,
+            transparent 100%
+        ),
+
+        /* 竖线 2 */
+        linear-gradient(
+            to bottom,
+            rgba(23, 60, 43, 0.18) 0%,
+            rgba(23, 60, 43, 0.12) 55%,
+            rgba(23, 60, 43, 0.04) 82%,
+            transparent 100%
+        ),
+
+        /* 竖线 3 */
+        linear-gradient(
+            to bottom,
+            rgba(23, 60, 43, 0.18) 0%,
+            rgba(23, 60, 43, 0.12) 55%,
+            rgba(23, 60, 43, 0.04) 82%,
+            transparent 100%
+        );
+
+    background-size:
+        100% 1px,
+        100% 1px,
+        1px 780px,
+        1px 780px,
+        1px 780px;
+
+    background-position:
+        right 45px,
+        right 345px,
+        calc(100% - 900px) top,
+        calc(100% - 600px) top,
+        calc(100% - 300px) top;
+
+    background-repeat: no-repeat;
+
+    pointer-events: none;
+
+    /* 背景层 */
+    z-index: 0;
+}
+
         nav {
             padding: 15px 60px;
             display: flex;
@@ -35,78 +115,6 @@
             width: 100%;
             box-sizing: border-box;
         }
-
-        body::before {
-    content: "";
-    position: absolute;
-
-    top: 120px;
-    right: 0;
-
-    width: 72%;
-    height: 650px;
-
-    background-image:
-
-        /* 横线 1：右边明显，往左慢慢消失 */
-        linear-gradient(
-            to left,
-            rgba(23, 60, 43, 0.045) 0%,
-            rgba(23, 60, 43, 0.03) 55%,
-            transparent 100%
-        ),
-
-        /* 横线 2 */
-        linear-gradient(
-            to left,
-            rgba(23, 60, 43, 0.045) 0%,
-            rgba(23, 60, 43, 0.03) 55%,
-            transparent 100%
-        ),
-
-        /* 竖线 1：上面明显，往下面慢慢消失 */
-        linear-gradient(
-            to bottom,
-            rgba(23, 60, 43, 0.045) 0%,
-            rgba(23, 60, 43, 0.03) 55%,
-            transparent 100%
-        ),
-
-        /* 竖线 2 */
-        linear-gradient(
-            to bottom,
-            rgba(23, 60, 43, 0.045) 0%,
-            rgba(23, 60, 43, 0.03) 55%,
-            transparent 100%
-        ),
-
-        /* 竖线 3 */
-        linear-gradient(
-            to bottom,
-            rgba(23, 60, 43, 0.045) 0%,
-            rgba(23, 60, 43, 0.03) 55%,
-            transparent 100%
-        );
-
-    background-size:
-        100% 1px,
-        100% 1px,
-        1px 100%,
-        1px 100%,
-        1px 100%;
-
-    background-position:
-        right 180px,
-        right 480px,
-        18% top,
-        48% top,
-        78% top;
-
-    background-repeat: no-repeat;
-
-    pointer-events: none;
-    z-index: 0;
-}
 
         nav ul {
             display: flex;
@@ -161,12 +169,20 @@
 
         .hero-image img {
             margin-top: 25px;
+            
             width: 370px;
             height: 400px;
+            
             object-fit: cover;
             object-position: 40% 40%;
+            
             border-radius: 4px;
             box-shadow: 0 8px 24px rgba(23, 60, 43, 0.20);
+            
+            position: relative;
+            z-index: 2;
+            display: block;
+            background-color: white;
         }
         
         .hero h1 {
