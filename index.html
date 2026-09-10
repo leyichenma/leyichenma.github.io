@@ -8,78 +8,82 @@
 
     <style>
          body {
-             margin: 0;
-             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    background-color: #ffffff;
 
     background-image:
-        /* 第一条横线 */
-        linear-gradient(
-            to bottom,
-            transparent 310px,
-            rgba(23, 60, 43, 0.055) 310px,
-            rgba(23, 60, 43, 0.055) 311px,
-            transparent 311px
-        ),
 
-        /* 第二条横线 */
+        /* 横线 1 */
         linear-gradient(
-            to bottom,
-            transparent 466px,
-            rgba(23, 60, 43, 0.055) 466px,
-            rgba(23, 60, 43, 0.055) 467px,
-            transparent 467px
-        ),
-
-        /* 右边 70% 的竖线 */
-        repeating-linear-gradient(
             to right,
-            rgba(23, 60, 43, 0.055) 0,
-            rgba(23, 60, 43, 0.055) 1px,
-            transparent 1px,
-            transparent 156px
+            rgba(23, 60, 43, 0.045) 0%,
+            rgba(23, 60, 43, 0.035) 55%,
+            transparent 100%
         ),
 
-        /* 左上浅绿 → 白色 */
+        /* 横线 2 */
         linear-gradient(
-            to bottom right,
+            to right,
+            rgba(23, 60, 43, 0.04) 0%,
+            rgba(23, 60, 43, 0.025) 55%,
+            transparent 100%
+        ),
+
+        /* 竖线 1 */
+        linear-gradient(
+            to bottom,
+            rgba(23, 60, 43, 0.045) 0%,
+            rgba(23, 60, 43, 0.03) 55%,
+            transparent 100%
+        ),
+
+        /* 竖线 2 */
+        linear-gradient(
+            to bottom,
+            rgba(23, 60, 43, 0.045) 0%,
+            rgba(23, 60, 43, 0.03) 55%,
+            transparent 100%
+        ),
+
+        /* 竖线 3 */
+        linear-gradient(
+            to bottom,
+            rgba(23, 60, 43, 0.04) 0%,
+            rgba(23, 60, 43, 0.025) 55%,
+            transparent 100%
+        ),
+
+        /* 最底层：左上浅绿色 → 白色 */
+        linear-gradient(
+            to right,
             #eef6ee 0%,
-            #ffffff 45%,
+            #f7faf7 25%,
+            #ffffff 48%,
             #ffffff 100%
         );
 
     background-size:
-        70% 100%,
-        70% 100%,
-        70% 100%,
+        70% 1px,
+        70% 1px,
+        1px 70vh,
+        1px 70vh,
+        1px 70vh,
         100% 100%;
 
     background-position:
-        right top,
-        right top,
-        right top,
+        right 28%,
+        right 58%,
+        52% top,
+        70% top,
+        88% top,
         left top;
 
-    background-repeat:
-        no-repeat,
-        no-repeat,
-        no-repeat,
-        no-repeat;
+    background-repeat: no-repeat;
 
     color: #173c2b;
 }
-
-         background-size:
-              260px 260px,
-              260px 260px,
-              100% 100%;
-
-        background-repeat:
-              repeat,
-              repeat,
-              no-repeat;
-
-       color: #173c2b;
-     }
 
         nav {
             padding: 5px 60px;
@@ -114,7 +118,7 @@
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
-            gap: 30px;
+            gap: 50px;
         }
 
         .hero-text {
