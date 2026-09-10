@@ -8,16 +8,18 @@
 
     <style>
         body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background: linear-gradient(
-                to bottom left,
-                #dceaf3 0%,
-                #edf3ee 45%,
-                #f3f7f1 100%
-            );
-            color: #173c2b;
-        }
+             margin: 0;
+             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+             background: linear-gradient(
+                  to bottom right,
+                  #eef6ee 0%,
+                  #ffffff 45%,
+                  #ffffff 100%
+        );
+
+    color: #173c2b;
+}
 
         nav {
             padding: 5px 60px;
@@ -71,11 +73,11 @@
             border-radius: 18px;
             font-size: 18px;
             font-weight: 500;
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
         .hero-image img {
-            margin-top: 70px;
+            margin-top: 40px;
             width: 370px;
             height: 370px;
             object-fit: cover;
@@ -89,7 +91,7 @@
             color: #0d2f22;
             font-size: 82px;
             font-weight: 700;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
 
         .dark-section {
@@ -102,6 +104,14 @@
             background-color: #102e21;
             color: white;
         }
+
+        @media (max-width: 768px) {
+
+           .hero {
+                 flex-direction: column;
+       }
+    }
+
     </style>
 </head>
 
