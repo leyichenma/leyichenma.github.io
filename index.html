@@ -492,6 +492,72 @@ transform: translateY(-50%);
             -webkit-text-stroke: 0.15px currentColor;
         }
 
+
+        .education-card {
+            min-width: 0;
+            padding: 28px;
+            border: 1px solid #dce6df;
+            border-radius: 6px;
+        }
+
+        .education-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 24px;
+        }
+
+        .education-card-header > div {
+            min-width: 0;
+        }
+
+        .education-card h3 {
+            margin: 0;
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        #education .education-school {
+            margin-top: 6px;
+            font-size: 17px;
+        }
+
+        #education .education-date {
+            flex-shrink: 0;
+            font-size: 14px;
+            color: #63786a;
+            white-space: nowrap;
+        }
+
+        .education-group {
+            margin-top: 26px;
+        }
+
+        .education-group h4 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .education-group ul {
+            margin: 10px 0 0;
+            padding-left: 22px;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 480px) {
+            .education-card {
+                padding: 22px;
+            }
+
+            .education-card-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
     </style>
 </head>
 
@@ -620,9 +686,29 @@ transform: translateY(-50%);
     <section id="education">
         <h2>Education</h2>
 
-        <p>
-            Education content will go here.
-        </p>
+        <div class="education-card">
+            <div class="education-card-header">
+                <div>
+                    <h3>Engineering Physics — BASc</h3>
+                    <p class="education-school">University of British Columbia</p>
+                </div>
+                <p class="education-date">2025 – Present</p>
+            </div>
+
+            <div class="education-group">
+                <h4>Achievements</h4>
+                <ul>
+                    <li>XXX</li>
+                </ul>
+            </div>
+
+            <div class="education-group">
+                <h4>Selected Relevant Courses</h4>
+                <ul>
+                    <li>XXX</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
 
