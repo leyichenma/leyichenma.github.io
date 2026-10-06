@@ -468,26 +468,20 @@ transform: translateY(-50%);
         }
 
 
-        #experience h2,
-        #projects h2,
-        #education h2 {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        #experience h2::before,
-        #projects h2::before,
-        #education h2::before {
+        #experience h2::after,
+        #projects h2::after,
+        #education h2::after {
             content: "";
-            width: 24px;
+            display: block;
+            width: 48px;
             height: 2px;
-            flex-shrink: 0;
+            margin-top: 12px;
             background-color: #a6cdb4;
         }
 
         .footer-left h3 {
             font-family: "Times New Roman", Times, serif;
+            font-weight: 400;
         }
 
     </style>
