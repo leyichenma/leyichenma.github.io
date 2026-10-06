@@ -443,7 +443,7 @@ transform: translateY(-50%);
         #projects h2,
         #education h2 {
             font-family: Georgia, "Times New Roman", serif;
-            font-size: clamp(36px, 4vw, 54px);
+            font-size: clamp(21.6px, 2.4vw, 32.4px);
             font-weight: 500;
             line-height: 1.15;
             margin: 0;
@@ -465,6 +465,29 @@ transform: translateY(-50%);
                 grid-template-columns: minmax(0, 1fr);
                 gap: 24px;
             }
+        }
+
+
+        #experience h2,
+        #projects h2,
+        #education h2 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        #experience h2::before,
+        #projects h2::before,
+        #education h2::before {
+            content: "";
+            width: 24px;
+            height: 2px;
+            flex-shrink: 0;
+            background-color: #a6cdb4;
+        }
+
+        .footer-left h3 {
+            font-family: "Times New Roman", Times, serif;
         }
 
     </style>
