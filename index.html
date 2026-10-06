@@ -426,6 +426,47 @@ transform: translateY(-50%);
             }
         }
 
+
+        /* Section headings match the serif type used for the name. */
+        #about,
+        #experience,
+        #projects,
+        #education {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1.65fr);
+            gap: 60px;
+            align-items: start;
+        }
+
+        #about h2,
+        #experience h2,
+        #projects h2,
+        #education h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(36px, 4vw, 54px);
+            font-weight: 500;
+            line-height: 1.15;
+            margin: 0;
+        }
+
+        #about p,
+        #experience p,
+        #projects p,
+        #education p {
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 768px) {
+            #about,
+            #experience,
+            #projects,
+            #education {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 24px;
+            }
+        }
+
     </style>
 </head>
 
